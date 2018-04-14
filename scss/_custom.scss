@@ -1,7 +1,7 @@
 // Your custom styles
 
 // Material colors
-$primary-color:        #4285f4;
+$primary-color:        #d1dcee !important;
 $primary-color-dark:   #0d47a1;
 $secondary-color:      #aa66cc;
 $secondary-color-dark: #9933cc;
@@ -26,3 +26,14 @@ $special-color-dark:   #263238;
 $white:                #ffffff;
 $black:                #000000;
 $error-color:          map-get($red, "base") !default;
+
+$theme-colors: (
+  primary: $black,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+) !important;
