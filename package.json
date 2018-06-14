@@ -1,0 +1,17 @@
+{
+  "name": "music-automaton-ui",
+  "version": "0.0.1",
+  "description": "UI website for the music automaton project",
+  "main": "index.js",
+  "scripts": {
+    "go": "gulp mdb-go"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "mdbootstrap": "^4.5.2"
+  }
+}
