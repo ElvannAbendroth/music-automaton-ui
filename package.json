@@ -4,7 +4,7 @@
   "description": "UI website for the music automaton project",
   "main": "index.js",
   "scripts": {
-    "go": "gulp mdb-go"
+    "go": "gulp css-compile"
   },
   "author": "",
   "license": "MIT",
