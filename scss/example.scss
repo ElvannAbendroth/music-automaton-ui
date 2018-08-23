@@ -1,5 +1,7 @@
-$primary-color: #673ab7;
-//$primary-color-light:
+//$primary-color: #673ab7;
+$primary-color: mediumpurple;
+$primary-color-dark: darken( $primary-color, 10% );
+$primary-color-light: lighten( $primary-color, 10% );
 
 
 .header-image {
@@ -13,6 +15,8 @@ $primary-color: #673ab7;
   height: 130px;
   margin-bottom: -100px;
   background-color: $primary-color;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
 }
 
 .navbar {
@@ -21,4 +25,8 @@ $primary-color: #673ab7;
 
 .btn-send {
   background-color: $primary-color;
+}
+
+.btn-send:hover {
+  background-color: $primary-color-light;
 }

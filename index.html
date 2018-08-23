@@ -69,11 +69,15 @@
         <div class="card-body card-body-cascade text-center">
 
             <!-- Title -->
-            <h4 class="card-title"><strong>About</strong></h4>
+            <h4 class="card-title"><strong>about</strong></h4>
             <!-- Subtitle -->
-            <h6 class="font-weight-bold indigo-text py-2">Music Automaton</h6>
+            <h6 class="font-weight-bold indigo-text py-2">Welcome to the Music-Automaton!</h6>
             <!-- Text -->
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem perspiciatis voluptatum a, quo nobis, non commodi quia repellendus sequi nulla voluptatem dicta reprehenderit, placeat laborum ut beatae ullam suscipit veniam.
+            <p class="card-text">
+                This application was created with the purpose of providing inspiration material for musicians to help them find ideas for their songs by generating automated 16 measures melodies and chords from your inputs.  Once your random melody is created, you can then download the MusicXML file (readable by music notation softwares such as Musescore) or share the direct link on social media platforms.
+            </p>
+            <p class="card-text">
+                We hope this will help inspire you to create more original music!
             </p>
 
         </div>
@@ -81,19 +85,33 @@
     </div>
     <!-- Card -->
 
-    <!-- Default form contact -->
+    <!-- Music Creation Form -->
     <form class="text-center border border-light p-5 w-50 ml-auto mr-auto mt-3 shadow rounded">
 
         <p class="h4 mb-4">Create Music</p>
 
-        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Title">
+        <!-- Song Title -->
 
-        <!-- Email -->
-        <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Author">
+        <input type="text" id="songTitle" class="form-control mb-4" placeholder="Song title">
+
+        <!-- Composer -->
+        <input type="text" id="composerName" class="form-control mb-4" placeholder="Composer">
+
+         <!-- bpm -->
+         <input type="text" id="beatsPerMinute" class="form-control mb-4" placeholder="bpm (50-144)">
+
+        <!-- Key Signature -->
+        <select id="timeSignature" class="browser-default custom-select mb-4">
+            <option value="" disabled>choose key signature</option>
+            <option value="1">2/4</option>
+            <option value="1">3/4</option>
+            <option value="1">4/4</option>
+           
+        </select>
 
         <!-- Subject -->
-        <select class="browser-default custom-select mb-4">
-            <option value="" disabled>Choose key</option>
+        <select id="songKey" class="browser-default custom-select mb-4">
+            <option value="" disabled>choose key</option>
             <option value="1">C Major</option>
             <option value="1">G Major</option>
             <option value="1">D Major</option>
@@ -128,7 +146,7 @@
         </select>
 
         <!-- Send button -->
-        <button class="btn btn-block btn-send" type="submit">Send</button>
+        <button class="btn btn-block btn-send w-50 mr-auto" type="submit">Send</button>
 
     </form>
     <!-- Default form contact -->
@@ -140,7 +158,7 @@
             <div class="contact-card-header"></div>
 
             <!-- Card image -->
-            <div class="view view-cascade overlay w-50 ml-auto mr-auto rounded-circle">
+            <div class="view view-cascade overlay w-50 ml-auto mr-auto rounded-circle shadow">
                 <img class="card-img-top" src="elvann.jpg" alt="Card image cap">
                 <a href="#!">
                     <div class="mask rgba-white-slight"></div>
@@ -153,7 +171,7 @@
                 <!-- Title -->
                 <h4 class="card-title"><strong>Elvann</strong></h4>
                 <!-- Subtitle -->
-                <h5 class="blue-text pb-2"><strong>Music Teacher</strong></h5>
+                <h5 class="blue-text pb-2"><strong>Musicic Teacher</strong></h5>
                 <!-- Text -->
                 <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
 
@@ -173,7 +191,7 @@
             <div class="contact-card-header"></div>
 
             <!-- Card image -->
-            <div class="view view-cascade overlay w-50 ml-auto mr-auto rounded-circle">
+            <div class="view view-cascade overlay w-50 ml-auto mr-auto rounded-circle shadow">
                 <img class="card-img-top" src="pekka-astala.jpeg" alt="Card image cap">
                 <a href="#!">
                     <div class="mask rgba-white-slight"></div>
